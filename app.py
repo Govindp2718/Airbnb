@@ -99,7 +99,7 @@ def main():
 
   #################### AREAS OF INTEREST ######################
 
-  st.header("What are you looking for?")
+  st.header("Explore the dataset!")
   st.write(f"Out of the {df.shape[1]} columns, you can select columns of your interest in the dataset. These are the most correlated columns to the price in listing")
   defaultcols = ["price", "minimum_nights", "room_type", "neighbourhood", "name", "number_of_reviews"]
   cols = st.multiselect('', df.columns.tolist(), default=defaultcols)
