@@ -318,8 +318,8 @@ def main():
   st.header("Price Distribution")
 
 
-  Min_price1 = st.number_input('Min Price', (df.price.min()), (df.price.max()), 10.0)
-  Max_price1 = st.number_input('Max Price', (df.price.min()), (df.price.max()), 5000.0)
+  Min_price1 = float(st.number_input('Min Price', float((df.price.min())), float((df.price.max())), 10.0))
+  Max_price1 = float(st.number_input('Max Price', float((df.price.min())), float((df.price.max())), 5000.0))
   #st.map(df.query(f"price<={Max_price} and price>={Min_price} and  minimum_nights<={min_nights_values} and number_of_reviews>={reviews}")[["latitude", "longitude"]].dropna(how="any"), zoom=10)
 
   st.markdown("Bellow we can select a custom price range from the side bar to update the histogram below and check the distribution skewness.")
