@@ -391,6 +391,10 @@ def main():
           #fig.show() # visualize
           #st.plotly(fig)
           st.plotly_chart(fig)
+          X, y = make_blobs(n_samples=7233, centers=5, random_state=5)
+          plt.rcParams.update({'figure.figsize':(10,7.5), 'figure.dpi':100})
+          blob = plt.scatter(X[:, 0], X[:, 1]);
+          st.plotly_chart(blob)
         
     # fit data
       def fit(self, X):
@@ -418,12 +422,7 @@ def main():
 
   st.markdown("**Interpretation of K means clustering.**")
 
-  X, y = make_blobs(n_samples=7233, centers=5, random_state=5)
-  plt.rcParams.update({'figure.figsize':(10,7.5), 'figure.dpi':100})
-  blob = plt.scatter(X[:, 0], X[:, 1]);
-  st.plotly_chart(blob)
-
-
+        
 
 
 
