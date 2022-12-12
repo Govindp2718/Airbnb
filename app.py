@@ -84,8 +84,8 @@ def main():
   st.markdown("We could also filter by listing **price**, **minimum nights** on a listing or minimum of **reviews** received. ")
 
 
-  Min_price = float(st.number_input('Min Price', (df.price.min()), (df.price.max()), 10.0 , step =10.0))
-  Max_price = float(st.number_input('Max Price', (df.price.min()), (df.price.max()), 5000.0, step=10.0))
+  Min_price = float(st.number_input('Min Price', float((df.price.min())), float((df.price.max())), 10.0 , step =10.0))
+  Max_price = float(st.number_input('Max Price', float((df.price.min())), float((df.price.max())), 5000.0, step=10.0))
   #min_value = st.slider("Min Price ($)", (df.price.min()), (df.price.clip(upper=10000.).max()), (500., 1500.))
   min_nights_values = st.slider('Minimum Nights', 0, 30, (30))
   reviews = st.slider('Minimum Reviews', 0, 700, (0))
