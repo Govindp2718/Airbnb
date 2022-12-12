@@ -451,7 +451,7 @@ def main():
   ################################## FOOTER ##################################
 
   st.markdown('-----------------------------------------------------')
-  st.text('Developed by Govind Pande - 2022')
+  st.text('Developed by Govind Pande - 12-12 2022')
 
 st.set_option('deprecation.showPyplotGlobalUse', False)
 
