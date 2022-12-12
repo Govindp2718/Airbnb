@@ -417,7 +417,8 @@ def main():
       #st.plotly_chart(y_pred)
 
 
-  st.markdown("**Interpretation of K means clustering.**")
+  st.markdown("For creating the clusters, we used 5 features from the dataset. The features are neighbourhood group, neighborhood, property type, price and number of reviews. The above visualization illustrates the distribution of clusters for the selected features.")
+  
 
         
 
