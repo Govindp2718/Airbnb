@@ -42,7 +42,7 @@ def main():
   st.sidebar.markdown(" ")
   st.sidebar.markdown("*This project is done as a part of the final project for the course Introduction to Data Mining*")
 
-  st.sidebar.markdown("**Author**:Kuldeep Malhotra, Govind Pande, Jayeun Pendley & Fernando Rivero Laseca")
+  st.sidebar.markdown("**Author**:Govind Pande")
   #st.sidebar.markdown("**Mail**: gpande@nyit.edu")
   #st.sidebar.markdown("**NYIT ID**: 1302516")
 
