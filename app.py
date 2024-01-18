@@ -38,7 +38,7 @@ def main():
   ################################ SIDEBAR ################################
 
 
-  st.sidebar.markdown("**Author**:Govind Pande, Ja-Yuan Pendley")
+  st.sidebar.markdown("**Author**:Govind Pande")
 
 
   ################################ SUMMARY ################################
